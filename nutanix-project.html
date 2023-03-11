@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rebecca Steele | Technical Writer &amp; Student Front End Dev::Nutanix CE Installation Guide</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Technical Writing and Web Development Portfolio of Rebecca Steele | 
+        Technical Writer and Student Front End Dev">
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom CSS-->
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <!--Font Awesome Icons -->
+        <link href="css/all.css" rel="stylesheet">
+        <!-- jQuery library -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+         
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div id="wrapper" class="container-fluid">
+            <header id="top">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo.png" 
+                        alt="home" height="138" width="138"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                      aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html#recent-projects">Recent Projects</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="portfolio.html">Portfolio</a>
+                          </li>
+                         <!--<li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                          </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav sm-icons mr-0 social-icons-ul-inline">
+                          <li class="nav-item"><a class="linkedin nav-link" 
+                            href="https://www.linkedin.com/in/steelerebecca/">
+                            <i class="fab fa-linkedin social-media-icons"></i></a></li>
+                          <li class="nav-item"><a class="github nav-link" href="https://github.com/rsteele6">
+                            <i class="fab fa-github social-media-icons"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+            <main>
+              <section class="my-5"> <!-- Intro -->
+                <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6"> <!-- Begin COL 1-->
+                        <h2 class="headers">Nutanix CE Installation Guide</h2>
+                        <p>
+                          A field installation guide for a fictitious Managed Services Provider (MSP) called 
+                          RS Tech Services, this guide allows field engineers to perform initial deployments 
+                          of Nutanix Community Edition at customer sites quickly and efficiently, 
+                          necessitating fewer calls to senior technical personnel.  
+                        </p>
+                        <p>
+                          Nutanix is a software-defined hyper-converged platform which combines storage, 
+                          computing, and virtualization. Community Edition is a free version of this platform
+                          intended for testing and non-production use cases.
+                        </p>
+                        <p>
+                          View the guide on <a href="https://rsteele6.gitbook.io/nutanix-ce-deployment-guide/" target="_blank">GitBook</a> 
+                          or as a <a href="samples/nutanix-deployment-guide.pdf" target="_blank">PDF</a>.
+                        </p>
+                      </div> <!-- End COL 1 -->
+                      <div class="col-sm-6 my-auto"> <!-- Begin COL 2-->
+                        <img class="img-fluid" src="images/nutanix.png" 
+                        alt="Nutanix logo" 
+                        width="700" height="500">
+                      </div> <!-- End COL 2 -->
+                    </div>
+                  </div>
+                </div>
+                <hr class="section-rule mt-5">
+              </section>
+                <section class="my-5"> <!-- Use Case Section -->
+                  <div id="use-case" class="container">
+                    <h2 class="headers">Use Case</h2>
+                    <p>
+                      This is a field guide for on-site deployments of Nutanix Community Edition. Previously, RS Tech Services
+                      had no such guide customized to their specific needs.
+                    </p>
+                  </div>
+                  <hr class="section-rule mt-5">
+                </section>
+                <section id="solution" class="my-5"> <!-- Solution Section -->
+                  <div class="container">
+                    <h2 class="headers">Solution</h2>
+                    <p>
+                      I created a detailed deployment guide in PDF format and GitBook using a combination of 
+                      available literature on Nutanix Community Edition and personal experience with the paid version
+                      of the product. Had RS Tech Services been an actual client, I also would've additionally worked with 
+                      service management and senior IT engineers to gather requirements.
+                    </p>
+                    <!-- Approach Subsection -->
+                    <h3 class="headers left-align-text">Approach</h3>
+                    <p>
+                      I decided to divide the guide into five parts, plus reference and appendix sections:
+                    </p>
+                    <ol>
+                      <li>Overview</li>
+                      <li>Hardware Requirements</li>
+                      <li>Network Requirements</li>
+                      <li>Software Requirements</li>
+                      <li>Deployment</li>
+                    </ol>
+                    <p>
+                      I’ve found from experience that many install guides pepper prerequisite information as asides 
+                      throughout the actual procedure, which makes 11th hour “gotchas” more likely. Therefore, 
+                      I chose to cover all those topics before moving on to the actual deployment procedure. 
+                    </p>
+                  </div>
+                  <!-- Design Decisions Subsection -->
+                  <div class="container mb-5">
+                    <h3 class="headers left-align-text">Design Decisions</h3>
+                    <p>
+                      I went with a clean front and back cover design that contained RS Tech Services’ logo and contact 
+                      information (including a QR code for the company website), internal document number, version 
+                      number and date. Versioning information is inside the front matter.
+                    </p>
+                  </div>
+                  <div class="container">
+                    <div class="row  mb-5">
+                      <div class="col-sm-6 mb-5"> <!-- Begin COL 1-->
+                        <img class="img-fluid" src="images/nutanix-cover.png" 
+                        alt="Nutanix CE Installation Guide front cover" width="768" height="593">
+                      </div> <!-- End COL 1 -->
+                      <div class="col-sm-6"> <!-- Begin COL 2-->
+                        <img class="img-fluid" src="images/nutanix-rear.png" 
+                        alt="Nutanix CE Installation Guide back cover" width="768" height="595">
+                      </div> <!-- End COL 2 -->
+                    </div>
+                  </div>
+                  <div class="container mb-5">
+                    <p>
+                      I created a set of color-coded indicators to draw the reader’s attention to important information:
+                    </p>
+                  </div>    
+                  <div class="container">
+                    <div class="row  mb-5"> <!-- Begin Row 1 -->
+                      <div class="col-sm-6 mb-5"> <!-- Begin COL 1-->
+                        <img class="img-fluid" src="images/note.png" alt="Note Indicator" width="631" height="121">
+                      </div> <!-- End COL 1 -->
+                      <div class="col-sm-6"> <!-- Begin COL 2-->
+                        <img class="img-fluid" src="images/warning.png" alt="Warning Indicator" width="631" height="131">
+                      </div> <!-- End COL 2 -->
+                    </div> <!-- End Row 1 -->
+                    <div class="row mb-5"> <!-- Begin Row 2 -->
+                      <div class="col-sm-6">
+                        <img class="img-fluid" src="images/caution.png" alt="Caution Indicator" width="629" height="127">
+                      </div> <!-- End COL 1-->
+                    </div> <!-- End Row 2 -->
+                  </div>
+                  <div class="container">
+                    <div class="container mb-5">
+                      <!-- Creating the Guide Subsection -->
+                      <h3 class="headers left-align-text">Creating the Guide</h3>
+                      <p>
+                        I begin by considering the audience for this guide: field engineers working for my fictitious 
+                        MSP. I based my design on the following assumptions:
+                      </p>
+                      <ol>
+                        <li>The engineers would have some experience with the Nutanix platform and a solid foundation 
+                          in networking and server administration.
+                        </li>
+                        <li>RS Tech Services wants a repeatable procedure that techs can use to carry out baseline 
+                          deployments to customers. This procedure should reduce the likelihood of human error.
+                        </li>
+                      </ol>
+                      <p>
+                        Next, I scoured the available literature on Nutanix Community Edition. I had hands-on 
+                        experience with the paid version of this product, but CE was new to me.
+                      </p>
+                      <p>
+                        I consulted Nutanix’s knowledge base and support forums as well as various company-written 
+                        manuals and guides.
+                      </p>
+                      <p>
+                        I then put together a basic outline of all sections and begin fleshing them out. As mentioned 
+                        earlier, I covered all pre-requisite information before moving on to the deployment procedure to 
+                        avoid those last minute “gotchas” that make a service provider look bad to their customers. All section 
+                        headings in the PDF version are hyperlinked to improve usability. I added an appendix that includes a glossary 
+                        of terms, a checklist that technicians can use to record IP address information for customers, a list of 
+                        vendor default passwords, and instruction on changing those default passwords.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+            </main>
+            <!-- Site footer -->
+            <footer class="site-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <p class="text-justify">
+                      Welcome to my portfolio site! I'm a Technical Writer leveraging my 10+ years of experience in the 
+                      IT industry to transform complicated technical information into audience-appropriate content. I also
+                      enjoy building clean, professional websites for individuals and small businesses.
+                    </p>
+                  </div>
+                  <div id="stc-logo-wrapper" class="col-xs-6 col-md-3">
+                    <a href="https://www.stc.org/" target="_blank">
+                      <img id="stc-logo" class="img-fluid" src="images/STC-Logo-Member.png" alt="STC Logo" height="265" 
+                      width="521">
+                    </a>
+                  </div>
+                  <div class="col-xs-6 col-md-3 right-align-text">
+                    <ul class="footer-links">
+                      <li><a href="index.html#about">About</a></li>
+                      <li><a href="index.html#recent-projects">Recent Projects</a></li>  
+                      <li><a href="portfolio.html">Portfolio</a></li>
+                      <!-- <li><a href="blog.html">Blog</a></li> -->
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <hr>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2022 Rebecca Steele | All Rights Reserved.
+                    </p>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons-ul-inline right-align-text">
+                      <li><a class="github" href="https://github.com/rsteele6"><i class="fab fa-github social-media-icons"></i></a></li>
+                      <li><a class="linkedin" href="https://www.linkedin.com/in/steelerebecca/"><i class="fab fa-linkedin social-media-icons"></i></a></li>   
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </footer>
+        </div> <!-- End Wrapper -->
+    </body>
+</html>
